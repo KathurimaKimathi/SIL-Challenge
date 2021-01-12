@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenID Connect Signup</title>
+</head>
+<body>
+
+    <div>
+        {% if user.is_authenticated %}
+         <p>You are already authenticated. <a href="{% url 'api' %}">Proceed</a></p>
+             <form action="{% url 'oidc_logout' %}" method="post">
+                 {% csrf_token %}
+                 <input type="submit" value="Logout">
+             </form>
+         {% else %}
+            <a href="{% url 'oidc_authentication_init' %}">Login</a>
+         {% endif %}
+    </div>
+
+</body>
+</html>

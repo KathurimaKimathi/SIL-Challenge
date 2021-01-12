@@ -1,0 +1,6 @@
+.idea/*
+ghvenv/
+.env
+mysite/__pycache__/*
+myapi/__pycache__/*
+db.sqlite3

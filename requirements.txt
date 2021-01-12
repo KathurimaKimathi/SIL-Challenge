@@ -1,0 +1,11 @@
+africastalking
+coverage
+Django
+django-extensions
+django-webtest
+djangorestframework
+mock
+mozilla-django-oidc==1.2.4
+pytest
+pytest-django
+python-decouple
