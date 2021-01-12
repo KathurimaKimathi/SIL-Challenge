@@ -1,0 +1,6 @@
+[run]
+omit =
+	manage.py
+	*/sicvenv/*
+	*/htmlcov/*
+	*/migrations/*
